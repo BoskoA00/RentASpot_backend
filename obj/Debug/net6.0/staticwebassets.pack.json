@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\NoPic.png",
+      "PackagePath": "staticwebassets\\Images\\NoPic.png"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg",
+      "PackagePath": "staticwebassets\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg",
+      "PackagePath": "staticwebassets\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 3.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Kuca 3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 4.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Kuca 4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 6.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Kuca 6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 2.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Stan 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 3.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Stan 3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\kuca 1.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\kuca 1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProjekatSI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ProjekatSI.props",
+      "PackagePath": "build\\ProjekatSI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProjekatSI.props",
+      "PackagePath": "buildMultiTargeting\\ProjekatSI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProjekatSI.props",
+      "PackagePath": "buildTransitive\\ProjekatSI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
