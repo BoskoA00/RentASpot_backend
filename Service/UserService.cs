@@ -121,7 +121,7 @@ namespace ProjekatSI.Service
             existingUser.Email = user.Email;
             existingUser.FirstName = user.FirstName;
             existingUser.LastName = user.LastName;
-
+            existingUser.Password = user.Password;
 
             await _databaseContext.SaveChangesAsync();
         }

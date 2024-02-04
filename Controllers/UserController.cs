@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProjekatSI.Data;
 using ProjekatSI.DTO;
 using ProjekatSI.Interface;
+using System.Data.SqlTypes;
 
 
 namespace ProjekatSI.Controllers
@@ -41,9 +42,8 @@ namespace ProjekatSI.Controllers
         public async Task<IActionResult> UpdateUser([FromBody] UserRequestDTO request)
         {
             var user = _mapper.Map<User>(request);
-            
+            user.Password = _userService.HashPassword(request.Password);
             await _userService.UpdateUser(user);
-
 
             return Ok(_mapper.Map<UserResponseDTO>(await _userService.GetUserById(user.Id)));
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjekatSI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fffa43848bea8d101c3b77fdc7a1acb6fb0a798c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjekatSI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjekatSI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

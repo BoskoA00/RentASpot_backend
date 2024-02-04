@@ -68,3 +68,4 @@ C:\Users\Laptop\Desktop\SIP\ProjekatSI\obj\Release\net6.0\refint\ProjekatSI.dll
 C:\Users\Laptop\Desktop\SIP\ProjekatSI\obj\Release\net6.0\ProjekatSI.pdb
 C:\Users\Laptop\Desktop\SIP\ProjekatSI\obj\Release\net6.0\ProjekatSI.genruntimeconfig.cache
 C:\Users\Laptop\Desktop\SIP\ProjekatSI\obj\Release\net6.0\ref\ProjekatSI.dll
+C:\Users\Laptop\Desktop\SIP\ProjekatSI\obj\Release\net6.0\ProjekatSI.sourcelink.json

@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\Images\\NoPic.png"
     },
     {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg",
+      "PackagePath": "staticwebassets\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg",
+      "PackagePath": "staticwebassets\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg"
+    },
+    {
       "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg",
       "PackagePath": "staticwebassets\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg"
     },
     {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\miraM@gmail.com-IMG-20220429-WA0165.jpg",
+      "PackagePath": "staticwebassets\\Images\\miraM@gmail.com-IMG-20220429-WA0165.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG-20220429-WA0122.jpg",
+      "PackagePath": "staticwebassets\\Images\\stefanS@gmail.com-IMG-20220429-WA0122.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg",
+      "PackagePath": "staticwebassets\\Images\\stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg"
+    },
+    {
       "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg",
       "PackagePath": "staticwebassets\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 2.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Kuca 2.jpg"
     },
     {
       "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 3.jpg",
@@ -21,8 +45,16 @@
       "PackagePath": "staticwebassets\\Oglasi\\Kuca 4.jpg"
     },
     {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 5.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Kuca 5.jpg"
+    },
+    {
       "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 6.jpg",
       "PackagePath": "staticwebassets\\Oglasi\\Kuca 6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 1.jpg",
+      "PackagePath": "staticwebassets\\Oglasi\\Stan 1.jpg"
     },
     {
       "Id": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 2.jpg",
