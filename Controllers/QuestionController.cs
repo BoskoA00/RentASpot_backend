@@ -58,24 +58,3 @@ namespace ProjekatSI.Controllers
 
     }
 }
-=======
-        public async Task<IActionResult> UpdateQuestion([FromRoute] int id, [FromBody] QuestionUpdateDTO request)
-        {
-            var r = await _questionService.GetQuestionById(id);
-            _mapper.Map<QuestionUpdateDTO, Question>(request, r);
-            await _questionService.UpdateQuestion(r);
-
-            return Ok(_mapper.Map<QuestionResponseDTO>(r));
-        }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteQuestion([FromRoute] int id)
-        {
-            var q = await _questionService.GetQuestionById(id); ;
-            await _questionService.DeleteQuestion(q);
-            return NoContent();
-        }
-        
-
-    }
-}
->>>>>>> 2841b6ef995917dae6568bacd207e8620aa7bae9

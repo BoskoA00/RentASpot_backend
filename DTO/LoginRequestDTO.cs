@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿namespace ProjekatSI.DTO
+namespace ProjekatSI.DTO
 {
     public class LoginRequestDTO
     {
@@ -8,14 +7,3 @@
 
     }
 }
-=======
-﻿namespace ProjekatSI.DTO
-{
-    public class LoginRequestDTO
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
-
-    }
-}
->>>>>>> 2841b6ef995917dae6568bacd207e8620aa7bae9
