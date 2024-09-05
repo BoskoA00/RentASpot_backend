@@ -74,7 +74,7 @@ namespace ProjekatSI.Controllers
             {
                 return BadRequest(new ErrorResponseDTO
                 {
-                    Message = "Postoji već korisnik sa ovim imenom"
+                    Message = " User already exists."
                 });
             }
             bool provera =await _userService.CheckPassword(_userService.HashPassword(request.Password));
@@ -82,7 +82,7 @@ namespace ProjekatSI.Controllers
             {
                 return BadRequest(new ErrorResponseDTO
                 {
-                    Message = "Lozinka je zauzeta"
+                    Message = "Password taken"
                 });
             }
             var user = _mapper.Map<User>(request);
@@ -123,14 +123,14 @@ namespace ProjekatSI.Controllers
             {
                 return BadRequest(new ErrorResponseDTO
                 {
-                    Message = "Ne postoji ovaj korisnik"
+                    Message = "This user doesn't exist."
                 });
             }
             if (_userService.HashPassword(request.Password) != userExists.Password)
             {
                 return BadRequest(new ErrorResponseDTO
                 {
-                    Message = "Neispravni podaci"
+                    Message = "Bad data."
                 });
             }
             var token = _userService.GenerateToken(userExists);

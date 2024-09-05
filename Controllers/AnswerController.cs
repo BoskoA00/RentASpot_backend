@@ -31,27 +31,27 @@ namespace ProjekatSI.Controllers
         [HttpPost("api/Question/Answers")]
         public async Task<IActionResult> CreateAnswer([FromBody] AnswerRequestDTO request)
         {
-            var q = _mapper.Map<QuestionAnswer>(request);
+            var answer = _mapper.Map<QuestionAnswer>(request);
            
-            await _answerService.CreateAnswer(q);
+            await _answerService.CreateAnswer(answer);
 
             return Ok(request);
         }
         [HttpDelete("api/[controller]/{id}")]
         public async Task<IActionResult> DeleteAnswer([FromRoute] int id)
         {
-            var a =await _answerService.GetAnswerById(id);
-            await _answerService.DeleteAnswer(a);
+            var answer =await _answerService.GetAnswerById(id);
+            await _answerService.DeleteAnswer(answer);
             return NoContent();
         }
         [HttpPut("api/[controller]/{id}")]
         public async Task<IActionResult> UpdateAnswer([FromRoute] int id, [FromBody] AnswerUpdateDTO request)
         {
-            var a =await _answerService.GetAnswerById(id);
+            var answer =await _answerService.GetAnswerById(id);
 
-            _mapper.Map<AnswerUpdateDTO,QuestionAnswer>(request,a);
+            _mapper.Map<AnswerUpdateDTO,QuestionAnswer>(request,answer);
 
-            return Ok(_mapper.Map<AnswerResponseDTO>(a));
+            return Ok(_mapper.Map<AnswerResponseDTO>(answer));
         }
     }
 }

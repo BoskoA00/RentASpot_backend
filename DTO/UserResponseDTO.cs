@@ -8,7 +8,7 @@ namespace ProjekatSI.DTO
         public string Email { get; set; }
         public int Role { get; set; }
         public string ImageName { get; set; }
-        public List<OglasResponseExtraDTO> Oglasi { get; set; }
+        public List<AdResponseExtraDTO> Ads { get; set; }
 
     }
 }

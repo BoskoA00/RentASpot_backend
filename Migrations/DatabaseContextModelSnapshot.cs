@@ -21,7 +21,7 @@ namespace ProjekatSI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ProjekatSI.Data.Oglas", b =>
+            modelBuilder.Entity("ProjekatSI.Data.Ad", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,7 +61,7 @@ namespace ProjekatSI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Oglasi");
+                    b.ToTable("Ads");
                 });
 
             modelBuilder.Entity("ProjekatSI.Data.Question", b =>
@@ -153,7 +153,7 @@ namespace ProjekatSI.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ProjekatSI.Data.Oglas", b =>
+            modelBuilder.Entity("ProjekatSI.Data.Ad", b =>
                 {
                     b.HasOne("ProjekatSI.Data.User", "User")
                         .WithMany("Oglasi")

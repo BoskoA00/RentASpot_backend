@@ -15,11 +15,11 @@ namespace ProjekatSI.Service
         }
         public async Task<List<QuestionAnswer>> GetAllAnswersAsync()
         {
-           return await  _databaseContext.Answers.Include(x => x.User).Include( x => x.Question).ToListAsync();
+           return await  _databaseContext.Answers.Include( answer => answer.User).Include( answer => answer.Question).ToListAsync();
         }
         public async Task<List<QuestionAnswer>> GetAllAnswersByQuestion(int QuestionId)
         {
-            return await _databaseContext.Answers.Where(x => x.QuestionId == QuestionId).Include(x => x.User).Include(x => x.Question).ToListAsync();
+            return await _databaseContext.Answers.Where( answer => answer.QuestionId == QuestionId).Include( answer => answer.User).Include( answer => answer.Question).ToListAsync();
         }
         public async Task CreateAnswer(QuestionAnswer answer)
         {
@@ -39,7 +39,7 @@ namespace ProjekatSI.Service
 
         public async Task<QuestionAnswer?> GetAnswerById(int id)
         {
-            return await _databaseContext.Answers.Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await _databaseContext.Answers.Where( answer => answer.Id == id).FirstOrDefaultAsync();
         }
     }
 }

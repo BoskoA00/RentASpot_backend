@@ -34,14 +34,14 @@ namespace ProjekatSI.Service
         public async Task DeleteUser(User user)
         {
          
-            var oglasi = await _databaseContext.Oglasi.Where(o => o.UserId == user.Id).ToListAsync();
-            _databaseContext.Oglasi.RemoveRange(oglasi);
+            var ads = await _databaseContext.Ads.Where( ad => ad.UserId == user.Id).ToListAsync();
+            _databaseContext.Ads.RemoveRange(ads);
 
 
-            var pitanja = await _databaseContext.Questions.Where(q => q.UserId == user.Id).ToListAsync();
-            _databaseContext.Questions.RemoveRange(pitanja);
-            var odgovori = await _databaseContext.Answers.Where(a => a.UserId == user.Id).ToListAsync();
-            _databaseContext.Answers.RemoveRange(odgovori);
+            var questions = await _databaseContext.Questions.Where( question => question.UserId == user.Id).ToListAsync();
+            _databaseContext.Questions.RemoveRange(questions);
+            var answers = await _databaseContext.Answers.Where( answer => answer.UserId == user.Id).ToListAsync();
+            _databaseContext.Answers.RemoveRange(answers);
 
             _databaseContext.Users.Remove(user);
             await _databaseContext.SaveChangesAsync();
@@ -58,6 +58,7 @@ namespace ProjekatSI.Service
                 {
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim("id", user.Id.ToString()),
+                    new Claim("role",user.Role.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
@@ -70,17 +71,17 @@ namespace ProjekatSI.Service
 
         public async Task<List<User>> GetAllUsersAsync()
         {
-            return await _databaseContext.Users.Include( a => a.Oglasi).ToListAsync();
+            return await _databaseContext.Users.Include( user => user.Ads).ToListAsync();
         }
 
         public async Task<User?> GetByUserName(string Email)
         {
-            return await _databaseContext.Users.Include(x=>x.Oglasi).Where(x => x.Email == Email).FirstOrDefaultAsync();
+            return await _databaseContext.Users.Include( user => user.Ads).Where( user => user.Email == Email).FirstOrDefaultAsync();
         }
 
         public async Task<User?> GetUserById(int id)
         {
-            return await _databaseContext.Users.Include(x => x.Oglasi).Where(x =>x.Id == id).FirstOrDefaultAsync();
+            return await _databaseContext.Users.Include( user => user.Ads).Where( user => user.Id == id).FirstOrDefaultAsync();
         }
 
         public string HashPassword(string password)

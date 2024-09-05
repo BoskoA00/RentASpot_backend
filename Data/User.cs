@@ -13,6 +13,6 @@ namespace ProjekatSI.Data
         public string ImageName { get; set; }
         public List<Question> Questions { get; set; }
         public List<QuestionAnswer> questionAnswers { get; set; }
-        public List<Oglas> Oglasi { get; set; }
+        public List<Ad> Ads { get; set; }
     }
 }

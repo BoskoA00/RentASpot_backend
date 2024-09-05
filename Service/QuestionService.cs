@@ -21,7 +21,7 @@ namespace ProjekatSI.Service
 
         public async Task DeleteQuestion(Question question)
         {
-            var answers = await _databaseContext.Answers.Where(x => x.QuestionId == question.Id).ToListAsync();
+            var answers = await _databaseContext.Answers.Where( x => x.QuestionId == question.Id).ToListAsync();
             _databaseContext.Answers.RemoveRange(answers);
          
             _databaseContext.Questions.Remove(question);
@@ -31,17 +31,17 @@ namespace ProjekatSI.Service
 
         public async Task<List<Question>> GetAllQuestionsAsync()
         {
-            return await _databaseContext.Questions.Include(x => x.User).Include(x=>x.Answers).ToListAsync();
+            return await _databaseContext.Questions.Include( question => question.User).Include( question => question.Answers).ToListAsync();
         }
 
         public async Task<Question?> GetQuestionById(int id)
         {
-            return await _databaseContext.Questions.Include(x => x.User).Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await _databaseContext.Questions.Include( question => question.User).Where( question => question.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<List<Question>> GetQuestionsByUserId(int UserId)
         {
-            return  await _databaseContext.Questions.Where(x => x.UserId == UserId).ToListAsync();
+            return  await _databaseContext.Questions.Where( question => question.UserId == UserId).ToListAsync();
         }
 
 

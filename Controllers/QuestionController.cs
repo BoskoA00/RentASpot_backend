@@ -33,19 +33,19 @@ namespace ProjekatSI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateQuestion([FromBody] QuestionRequestDTO request)
         {
-            var r = _mapper.Map<Question>(request);
-            await _questionService.CreateQuestion(r);
+            var question = _mapper.Map<Question>(request);
+            await _questionService.CreateQuestion(question);
 
-            return Ok(_mapper.Map<QuestionResponseDTO>(r));
+            return Ok(_mapper.Map<QuestionResponseDTO>(question));
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateQuestion([FromRoute] int id, [FromBody] QuestionUpdateDTO request)
         {
-            var r = await _questionService.GetQuestionById(id);
-            _mapper.Map<QuestionUpdateDTO, Question>(request, r);
-            await _questionService.UpdateQuestion(r);
+            var question = await _questionService.GetQuestionById(id);
+            _mapper.Map<QuestionUpdateDTO, Question>(request, question);
+            await _questionService.UpdateQuestion(question);
 
-            return Ok(_mapper.Map<QuestionResponseDTO>(r));
+            return Ok(_mapper.Map<QuestionResponseDTO>(question));
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuestion([FromRoute] int id)

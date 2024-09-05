@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XJs5+ERPB8xLTXGNfKnykEaXwmxpTJXiTB7jjf6x/yk=",
+  "Hash": "tyvziF8+wttHJhxVw0Z3tfCpZUPLOmq7vhH8xiosoj4=",
   "Source": "ProjekatSI",
   "BasePath": "_content/ProjekatSI",
   "Mode": "Default",
@@ -10,17 +10,55 @@
     {
       "Name": "ProjekatSI\\wwwroot",
       "Source": "ProjekatSI",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\build.zip",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Ads\\Screenshot 2024-09-01 123857.png",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
+      "BasePath": "_content/ProjekatSI",
+      "RelativePath": "Ads/Screenshot 2024-09-01 123857.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Ads\\Screenshot 2024-09-01 123857.png"
+    },
+    {
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\administrator1@gmail.com-Screenshot 2024-09-01 123857 (1).png",
+      "SourceId": "ProjekatSI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
+      "BasePath": "_content/ProjekatSI",
+      "RelativePath": "Images/administrator1@gmail.com-Screenshot 2024-09-01 123857 (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\administrator1@gmail.com-Screenshot 2024-09-01 123857 (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\build.zip",
+      "SourceId": "ProjekatSI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/build.zip",
       "AssetKind": "All",
@@ -36,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\build.zip"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/markoM@gmail.com-IMG-20220429-WA0166.jpg",
       "AssetKind": "All",
@@ -55,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg",
       "AssetKind": "All",
@@ -74,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027 (1).jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/markovicMare@gmail.com-IMG-20220423-WA0027.jpg",
       "AssetKind": "All",
@@ -93,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\markovicMare@gmail.com-IMG-20220423-WA0027.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\miraM@gmail.com-IMG-20220429-WA0165.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\miraM@gmail.com-IMG-20220429-WA0165.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/miraM@gmail.com-IMG-20220429-WA0165.jpg",
       "AssetKind": "All",
@@ -112,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\miraM@gmail.com-IMG-20220429-WA0165.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\NoPic.png",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\NoPic.png",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/NoPic.png",
       "AssetKind": "All",
@@ -131,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\NoPic.png"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg",
       "AssetKind": "All",
@@ -150,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904 (1).jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/stefanS@gmail.com-IMG_20221223_193719_904.jpg",
       "AssetKind": "All",
@@ -169,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\stefanS@gmail.com-IMG_20221223_193719_904.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Images\\stefanS@gmail.com-IMG-20220429-WA0122.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\stefanS@gmail.com-IMG-20220429-WA0122.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Images/stefanS@gmail.com-IMG-20220429-WA0122.jpg",
       "AssetKind": "All",
@@ -188,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\stefanS@gmail.com-IMG-20220429-WA0122.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\kuca 1.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\kuca 1.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/kuca 1.jpg",
       "AssetKind": "All",
@@ -207,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\kuca 1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 2.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Kuca 2.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Kuca 2.jpg",
       "AssetKind": "All",
@@ -226,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Kuca 2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 3.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Kuca 3.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Kuca 3.jpg",
       "AssetKind": "All",
@@ -245,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Kuca 3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 4.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Kuca 4.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Kuca 4.jpg",
       "AssetKind": "All",
@@ -264,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Kuca 4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 5.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Kuca 5.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Kuca 5.jpg",
       "AssetKind": "All",
@@ -283,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Kuca 5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Kuca 6.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Kuca 6.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Kuca 6.jpg",
       "AssetKind": "All",
@@ -302,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Kuca 6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 1.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Stan 1.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Stan 1.jpg",
       "AssetKind": "All",
@@ -321,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Stan 1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 2.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Stan 2.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Stan 2.jpg",
       "AssetKind": "All",
@@ -340,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\Oglasi\\Stan 2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\Oglasi\\Stan 3.jpg",
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Oglasi\\Stan 3.jpg",
       "SourceId": "ProjekatSI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\SIP\\ProjekatSI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
       "BasePath": "_content/ProjekatSI",
       "RelativePath": "Oglasi/Stan 3.jpg",
       "AssetKind": "All",
