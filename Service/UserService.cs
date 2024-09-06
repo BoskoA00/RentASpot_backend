@@ -58,7 +58,7 @@ namespace ProjekatSI.Service
                 {
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim("id", user.Id.ToString()),
-                    new Claim("role",user.Role.ToString())
+                    new Claim(ClaimTypes.Role,user.Role.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)

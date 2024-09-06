@@ -5,6 +5,7 @@ using ProjekatSI.Data;
 using ProjekatSI.DTO;
 using ProjekatSI.Interface;
 using System.Data.SqlTypes;
+using System.Security.Claims;
 
 
 namespace ProjekatSI.Controllers
@@ -41,7 +42,22 @@ namespace ProjekatSI.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateUser([FromBody] UserRequestDTO request)
         {
+
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
             var user = _mapper.Map<User>(request);
+            
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if (int.Parse(idToken) != user.Id)
+                {
+                    return Forbid();
+                }
+
+            }
+
+
             user.Password = _userService.HashPassword(request.Password);
             await _userService.UpdateUser(user);
 
@@ -51,7 +67,19 @@ namespace ProjekatSI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser([FromRoute] int id)
         {
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+            
             var user = _mapper.Map<User>(await _userService.GetUserById(id));
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if(int.Parse(idToken) != user.Id)
+                {
+                    return Forbid();
+                }
+
+            }
+
             if (user.ImageName != "NoPic.png")
             {
 

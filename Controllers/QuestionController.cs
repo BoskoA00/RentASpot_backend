@@ -6,6 +6,7 @@ using ProjekatSI.Data;
 using ProjekatSI.DTO;
 using ProjekatSI.Interface;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.Claims;
 
 namespace ProjekatSI.Controllers
 {
@@ -33,6 +34,13 @@ namespace ProjekatSI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateQuestion([FromBody] QuestionRequestDTO request)
         {
+
+            if (!User.Claims.Any())
+            {
+                return Forbid();
+
+            }
+
             var question = _mapper.Map<Question>(request);
             await _questionService.CreateQuestion(question);
 
@@ -41,7 +49,21 @@ namespace ProjekatSI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateQuestion([FromRoute] int id, [FromBody] QuestionUpdateDTO request)
         {
+
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
             var question = await _questionService.GetQuestionById(id);
+
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if (int.Parse(idToken) != question.UserId)
+                {
+                    return Forbid();
+                }
+
+            }
+
             _mapper.Map<QuestionUpdateDTO, Question>(request, question);
             await _questionService.UpdateQuestion(question);
 
@@ -50,8 +72,22 @@ namespace ProjekatSI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuestion([FromRoute] int id)
         {
-            var q = await _questionService.GetQuestionById(id); ;
-            await _questionService.DeleteQuestion(q);
+
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            var question = await _questionService.GetQuestionById(id); ;
+           
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if (int.Parse(idToken) != question.UserId)
+                {
+                    return Forbid();
+                }
+
+            }
+
+            await _questionService.DeleteQuestion(question);
             return NoContent();
         }
         

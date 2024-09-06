@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProjekatSI.Data;
 using ProjekatSI.DTO;
 using ProjekatSI.Interface;
+using System.Security.Claims;
 
 namespace ProjekatSI.Controllers
 {
@@ -31,6 +32,11 @@ namespace ProjekatSI.Controllers
         [HttpPost("api/Question/Answers")]
         public async Task<IActionResult> CreateAnswer([FromBody] AnswerRequestDTO request)
         {
+
+            if (!User.Claims.Any()) {
+                return Forbid();
+            }
+
             var answer = _mapper.Map<QuestionAnswer>(request);
            
             await _answerService.CreateAnswer(answer);
@@ -40,14 +46,43 @@ namespace ProjekatSI.Controllers
         [HttpDelete("api/[controller]/{id}")]
         public async Task<IActionResult> DeleteAnswer([FromRoute] int id)
         {
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            
+
             var answer =await _answerService.GetAnswerById(id);
+            
+            if(int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if( int.Parse(idToken) != answer.UserId)
+                {
+                    return Forbid();
+                }
+
+            }
+            
             await _answerService.DeleteAnswer(answer);
             return NoContent();
         }
         [HttpPut("api/[controller]/{id}")]
         public async Task<IActionResult> UpdateAnswer([FromRoute] int id, [FromBody] AnswerUpdateDTO request)
         {
-            var answer =await _answerService.GetAnswerById(id);
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+
+
+            var answer = await _answerService.GetAnswerById(id);
+
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                if (int.Parse(idToken) != answer.UserId)
+                {
+                    return Forbid();
+                }
+
+            }
 
             _mapper.Map<AnswerUpdateDTO,QuestionAnswer>(request,answer);
 

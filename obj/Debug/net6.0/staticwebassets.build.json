@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tyvziF8+wttHJhxVw0Z3tfCpZUPLOmq7vhH8xiosoj4=",
+  "Hash": "OHUyqggE7kpv/9f1GeGb/hOwN2TwUL/i8zQfa47f7y8=",
   "Source": "ProjekatSI",
   "BasePath": "_content/ProjekatSI",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\build.zip"
+    },
+    {
+      "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\kupac1@gmail.com-Screenshot 2024-09-01 123857.png",
+      "SourceId": "ProjekatSI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\",
+      "BasePath": "_content/ProjekatSI",
+      "RelativePath": "Images/kupac1@gmail.com-Screenshot 2024-09-01 123857.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\kupac1@gmail.com-Screenshot 2024-09-01 123857.png"
     },
     {
       "Identity": "C:\\Users\\Laptop\\Desktop\\RentASpot\\Be\\wwwroot\\Images\\markoM@gmail.com-IMG-20220429-WA0166.jpg",

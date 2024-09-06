@@ -8,6 +8,7 @@ using ProjekatSI.Interface;
 using ProjekatSI.Service;
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.Claims;
 
 namespace ProjekatSI.Controllers
 {
@@ -45,6 +46,21 @@ namespace ProjekatSI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateOglas([FromForm] AdRequestDTO request)
         {
+
+            if (!User.Claims.Any()) {
+                return Forbid();
+            }
+            
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            
+
+            if (int.Parse(userRole) == (int)UserRoles.Buyer)
+            {
+                return Forbid();
+            }
+
+
             string directoryPath = Path.Combine(_webHostEnvironment.WebRootPath, "Ads");
             if (!Directory.Exists(directoryPath))
             {
@@ -72,11 +88,31 @@ namespace ProjekatSI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateOglas([FromRoute] int id, [FromBody] AdUpdateRequestDTO request)
         {
+
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
             var adFromDatabase =await _adService.GetAdById(id);
+
+
+            if (int.Parse(userRole) == (int)UserRoles.Buyer)
+            {
+                return Forbid();
+            }
+
+
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+                
+                if(int.Parse(idToken) != adFromDatabase.UserId)
+                {
+                return Forbid();
+                }
+            }
             if(adFromDatabase == null)
             {
                 return BadRequest(new ErrorResponseDTO{
-                    Message="Nema ovog oglasa"
+                    Message="This ad doesn't exist."
                 });
             }
 
@@ -90,12 +126,30 @@ namespace ProjekatSI.Controllers
         public async Task<IActionResult> DeleteOglas([FromRoute] int id)
         {
             var ad = await _adService.GetAdById(id);
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+
+
+            if (int.Parse(userRole) == (int)UserRoles.Buyer)
+            {
+                return Forbid();
+            }
+
+
+            if (int.Parse(userRole) != (int)UserRoles.Admin)
+            {
+                var idToken = User.FindFirst("id")?.Value;
+
+                if (int.Parse(idToken) != ad.UserId)
+                {
+                    return Forbid();
+                }
+            }
 
             if (ad == null)
             {
                 return NotFound(new ErrorResponseDTO
                 {
-                    Message = "Oglas not found"
+                    Message = "Ad not found."
                 });
             }
 
